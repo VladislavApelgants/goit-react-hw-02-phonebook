@@ -29,7 +29,7 @@ class App extends Component {
       }
 
       return {
-        contacts: [...prevState.contacts, { name, number, id: uuidv4() }],
+        contacts: [{ name, number, id: uuidv4() }, ...prevState.contacts],
       };
     });
   };
